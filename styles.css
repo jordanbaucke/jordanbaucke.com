@@ -70,55 +70,126 @@ footer {
   color: var(--muted);
 }
 
+/* Material Design Popover Styles */
 .popover-btn {
   background: none;
   border: none;
-  color: var(--text);
-  text-decoration: underline;
+  color: #1976d2; /* Material Design Blue 700 */
+  text-decoration: none;
   font-family: inherit;
   font-size: inherit;
   cursor: pointer;
   padding: 0;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
 }
 
 .popover-btn:hover {
-  text-decoration: none;
+  color: #1565c0; /* Material Design Blue 800 */
+  text-decoration: underline;
+}
+
+.popover-btn:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 .popover {
   margin-top: 1rem;
-  padding: 1.25rem;
-  border: 1px solid var(--muted);
-  background: #fafafa;
-  border-radius: 0.5rem;
+  padding: 0;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+              0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+              0px 1px 3px 0px rgba(0, 0, 0, 0.12); /* Material Design elevation 1 */
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0s linear 0.2s;
+  max-width: 100%;
+  visibility: hidden;
+}
+
+.popover:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), 
+              transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              visibility 0s linear 0s;
 }
 
 .popover.hidden {
-  display: none;
+  display: block;
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+}
+
+.popover-content {
+  padding: 24px;
+}
+
+.popover h3 {
+  margin: 0 0 16px 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.87); /* Material Design text primary */
+}
+
+.popover p {
+  margin: 0 0 16px 0;
+  color: rgba(0, 0, 0, 0.6); /* Material Design text secondary */
+  line-height: 1.5;
+}
+
+.popover p:last-of-type {
+  margin-bottom: 0;
 }
 
 .popover a {
-  color: var(--text);
+  color: #1976d2;
   text-decoration: underline;
+  transition: color 0.2s ease;
 }
 
 .popover a:hover {
+  color: #1565c0;
   text-decoration: none;
 }
 
 .popover-close {
-  margin-top: 1rem;
-  background: none;
-  border: 1px solid var(--muted);
-  color: var(--text);
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+  margin-top: 16px;
+  background: transparent;
+  border: none;
+  color: #1976d2;
+  padding: 8px 16px;
+  border-radius: 4px;
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  font-weight: 500;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.0892857143em;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .popover-close:hover {
-  background: var(--muted);
-  color: var(--bg);
+  background-color: rgba(25, 118, 210, 0.08); /* Material Design ripple hover */
+}
+
+.popover-close:focus {
+  outline: 2px solid #1976d2;
+  outline-offset: 2px;
+}
+
+.popover-close:active {
+  background-color: rgba(25, 118, 210, 0.16);
 }
