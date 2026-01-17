@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Server files
+.DS_Store
+*.log
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

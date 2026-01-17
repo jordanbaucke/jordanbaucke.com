@@ -38,12 +38,87 @@ section {
   margin-top: 3rem;
 }
 
+section a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+section a:hover {
+  text-decoration: none;
+}
+
 ul {
   padding-left: 1.25rem;
+}
+
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.25rem;
+  border-left: 3px solid var(--muted);
+  color: var(--muted);
+  font-style: italic;
 }
 
 footer {
   margin-top: 4rem;
   font-size: 0.9rem;
   color: var(--muted);
+}
+
+.popover-btn {
+  background: none;
+  border: none;
+  color: var(--text);
+  text-decoration: underline;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.popover-btn:hover {
+  text-decoration: none;
+}
+
+.popover {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border: 1px solid var(--muted);
+  background: #fafafa;
+  border-radius: 0.5rem;
+}
+
+.popover.hidden {
+  display: none;
+}
+
+.popover a {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.popover a:hover {
+  text-decoration: none;
+}
+
+.popover-close {
+  margin-top: 1rem;
+  background: none;
+  border: 1px solid var(--muted);
+  color: var(--text);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.popover-close:hover {
+  background: var(--muted);
+  color: var(--bg);
 }
