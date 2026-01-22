@@ -35,14 +35,14 @@ jobs:
         continue-on-error: true  # Don't fail the workflow, just report
       
       - name: Upload link extraction results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: outbound-links
           path: tests/outbound_links.txt
       
       - name: Upload link check results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: always()
         with:
           name: link-check-results
