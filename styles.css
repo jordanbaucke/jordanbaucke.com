@@ -348,6 +348,24 @@ footer {
   font-weight: 500;
 }
 
+.podcast-note {
+  margin: 0.5rem 0 0.75rem 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.podcast-note a {
+  color: var(--text);
+  text-decoration: underline;
+  font-style: normal;
+}
+
+.podcast-note a:hover {
+  color: var(--accent);
+}
+
 .podcast-links {
   display: flex;
   gap: 1rem;
