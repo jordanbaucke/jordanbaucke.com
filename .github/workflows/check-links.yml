@@ -11,6 +11,10 @@ jobs:
   check-links:
     runs-on: ubuntu-latest
     name: Validate External Links
+    permissions:
+      issues: write
+      pull-requests: write
+      contents: read
     
     steps:
       - name: Checkout repository
@@ -51,6 +55,7 @@ jobs:
       - name: Comment PR with results
         if: github.event_name == 'pull_request'
         uses: actions/github-script@v6
+        continue-on-error: true  # Don't fail workflow if comment fails
         with:
           script: |
             const fs = require('fs');
