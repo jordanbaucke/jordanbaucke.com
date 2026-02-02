@@ -356,6 +356,88 @@ body.nav-open {
   margin-top: 2rem;
 }
 
+/* Stand-out: 21st Century Digital Boy Scout */
+.standout-boyscout {
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.standout-boyscout-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+
+.standout-boyscout-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.standout-boyscout-text {
+  flex: 1;
+  width: 100%;
+}
+
+.standout-boyscout-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.standout-boyscout-title a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.standout-boyscout-title a:hover {
+  text-decoration: underline;
+}
+
+.standout-boyscout-text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .standout-boyscout {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .standout-boyscout-inner {
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .standout-boyscout-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .standout-boyscout-title {
+    font-size: 1.5rem;
+  }
+
+  .standout-boyscout-text p {
+    font-size: 1rem;
+  }
+}
+
 section {
   margin-top: 2.5rem;
 }
