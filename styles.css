@@ -38,6 +38,7 @@
   .popover {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   }
+
 }
 
 /* ==========================================================================
@@ -659,10 +660,23 @@ blockquote {
   flex-shrink: 0;
   width: 48px;
   height: 48px;
-  border-radius: 4px;
-  background: var(--bg);
   object-fit: contain;
   padding: 4px;
+}
+
+.portfolio-card .portfolio-logo-placeholder {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: var(--muted);
+  opacity: 0.25;
+  border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .portfolio-card .portfolio-logo {
+    background: #fff;
+  }
 }
 
 .portfolio-card .portfolio-content {
@@ -685,11 +699,32 @@ blockquote {
   font-family: ui-monospace, monospace;
 }
 
+.portfolio-card .portfolio-pct {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
 .portfolio-card .portfolio-thesis {
   margin: 0.5rem 0 0 0;
   font-size: 0.95rem;
   color: var(--muted);
   font-style: italic;
+}
+
+.portfolio-card .portfolio-idea {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.portfolio-card .portfolio-idea a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.portfolio-card .portfolio-idea a:hover {
+  text-decoration: none;
 }
 
 .portfolio-logos-source {
