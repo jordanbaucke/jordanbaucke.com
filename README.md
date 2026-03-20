@@ -16,3 +16,13 @@ The site is designed to be intentionally minimalistic, and to mirror the sorts o
 - CSS3
 - JavaScript (vanilla)
 - GitHub Pages for hosting
+
+## Quote Avatar Image Fallback
+
+For profile images in the homepage Philosophy quote carousel, use this order:
+
+1. Wikimedia image URL when available.
+2. Official artist/person site image when no Wikimedia image is available.
+3. Local placeholder avatar when no usable image source is found.
+
+When using non-Wikimedia images, download and store the files in `media/` and reference them from `quotes-carousel.js` so quote avatars are stable and not dependent on third-party hotlinking.
