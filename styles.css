@@ -765,6 +765,159 @@ blockquote {
   margin-bottom: 1rem;
 }
 
+/* Investing page: sector allocation chart (Chart.js) */
+
+.portfolio-sector-chart-block {
+  margin: 1.5rem 0 2.25rem;
+  padding: 1.25rem 1.5rem;
+  border-left: 3px solid var(--text);
+  background: var(--surface-alt);
+}
+
+.portfolio-sector-chart-block h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.portfolio-sector-note,
+.portfolio-sector-library {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0 0 1rem 0;
+  max-width: 40rem;
+}
+
+.portfolio-sector-library {
+  margin: 1rem 0 0 0;
+  margin-bottom: 0;
+}
+
+.portfolio-sector-library a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.portfolio-sector-library a:hover {
+  text-decoration: none;
+}
+
+.portfolio-chart-canvas-wrap {
+  max-width: 22rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.portfolio-chart-canvas-wrap canvas {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Investing page: performance table & quarterly review */
+
+.performance-note {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin: 0 0 1rem 0;
+  max-width: 40rem;
+}
+
+.performance-table-wrap {
+  overflow-x: auto;
+  margin: 0 0 2.5rem 0;
+  border-left: 3px solid var(--text);
+  background: var(--surface-alt);
+  padding: 0.75rem 1rem 1rem;
+}
+
+.performance-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.performance-table caption {
+  text-align: left;
+}
+
+.performance-table th,
+.performance-table td {
+  padding: 0.5rem 1rem 0.5rem 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--muted);
+}
+
+.performance-table thead th {
+  font-weight: 600;
+  border-bottom: 2px solid var(--text);
+}
+
+.performance-table tbody tr:last-child th,
+.performance-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.performance-table .performance-num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.performance-table tbody th[scope="row"] {
+  font-weight: 600;
+}
+
+.performance-outperform {
+  font-weight: 600;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+#performance,
+#quarterly-review {
+  margin-top: 2.5rem;
+}
+
+.investing-review-post {
+  max-width: 42rem;
+}
+
+.investing-review-meta {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.investing-review-post p {
+  margin: 0 0 1rem 0;
+  line-height: 1.55;
+}
+
+.investing-review-lead {
+  font-size: 1.02rem;
+}
+
+.investing-review-post a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.investing-review-post a:hover {
+  text-decoration: none;
+}
+
 .coming-soon-link {
   color: var(--muted);
   text-decoration: none;

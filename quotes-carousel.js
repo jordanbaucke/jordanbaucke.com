@@ -95,6 +95,18 @@
       "22": {
         label: "Masayoshi Son",
         imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Masayoshi_Son_%28P066533-522034%2C_cropped%29.jpg/330px-Masayoshi_Son_%28P066533-522034%2C_cropped%29.jpg"
+      },
+      "23": {
+        label: "Albert Einstein",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Albert_Einstein_Head.jpg/330px-Albert_Einstein_Head.jpg"
+      },
+      "24": {
+        label: "Pennywise",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Pennywise-Rock_im_Park_2014-_by_2eight_DSC9646.jpg/330px-Pennywise-Rock_im_Park_2014-_by_2eight_DSC9646.jpg"
+      },
+      "25": {
+        label: "Lucky Boys Confusion",
+        imageUrl: "media/lucky-boys-confusion.jpg"
       }
     };
 
