@@ -56,144 +56,194 @@
     <section id="portfolio">
       <h2>Portfolio</h2>
       <p>
-        A list of symbols in my portfolio. Descriptions to be added.
+        Allocations below are as of March 31, 2026 (end of Q1&nbsp;2026), rounded. Descriptions to be added.
       </p>
 
       <p class="portfolio-logos-source">
         Portfolio logos: <a href="https://companieslogo.com" target="_blank" rel="noopener noreferrer">CompaniesLogo.com</a> (used for editorial and informational purposes; logos belong to their respective copyright holders).
       </p>
+
+      <div class="portfolio-sector-chart-block">
+        <h3 id="portfolio-sector-title">Allocation by sector</h3>
+        <p class="portfolio-sector-note">
+          Broad GICS-style sector tags on each position below; the chart sums those weights (same date as the list).
+        </p>
+        <div class="portfolio-chart-canvas-wrap">
+          <canvas id="portfolio-sector-chart" width="400" height="400" aria-labelledby="portfolio-sector-title" role="img"></canvas>
+        </div>
+        <p class="portfolio-sector-library">
+          Chart: <a href="https://www.chartjs.org/" target="_blank" rel="noopener noreferrer">Chart.js</a> (MIT License).
+        </p>
+      </div>
+
       <div class="portfolio-list">
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Health Care">
           <a href="https://www.lilly.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/lilly-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.lilly.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">LLY</span> — Eli Lilly <span class="portfolio-pct">23.38%</span></a>
+            <a href="https://www.lilly.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">LLY</span> — Eli Lilly <span class="portfolio-pct">21.12%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
             <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://stansberryresearch.com/stansberry-investor-hour" target="_blank" rel="noopener noreferrer">Stansberry Investor Hour</a>, <a href="https://x.com/dferris1961" target="_blank" rel="noopener noreferrer">Dan Ferris</a>. I still need to recall the analyst guest's name from a 2022 or 2023 episode on GLP-1 drug prospects.</p>
           </div>
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Utilities">
           <a href="https://www.talenenergy.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/talen-energy-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.talenenergy.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">TLN</span> (net of short call) — Talen Energy <span class="portfolio-pct">13.77%</span></a>
+            <a href="https://www.talenenergy.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">TLN</span> — Talen Energy <span class="portfolio-pct">17.14%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
             <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://x.com/enriqueabeyta" target="_blank" rel="noopener noreferrer">Enrique Abeyta</a>, <a href="https://x.com/WhitneyTilson" target="_blank" rel="noopener noreferrer">Whitney Tilson</a>, <a href="https://x.com/ErikSTownsend" target="_blank" rel="noopener noreferrer">Erik Townsend</a></p>
           </div>
         </div>
-        <div class="portfolio-card">
-          <a href="https://abc.xyz" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-            <img src="media/alphabet-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
-          </a>
-          <div class="portfolio-content">
-            <a href="https://abc.xyz" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">GOOG / GOOGL</span> (combined) — Alphabet <span class="portfolio-pct">9.99%</span></a>
-            <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
-          </div>
-        </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Financials">
           <a href="https://www.berkshirehathaway.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/berkshire-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.berkshirehathaway.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">BRK.B</span> — Berkshire Hathaway <span class="portfolio-pct">9.56%</span></a>
+            <a href="https://www.berkshirehathaway.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">BRK.B</span> — Berkshire Hathaway <span class="portfolio-pct">9.65%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
           </div>
         </div>
-        <div class="portfolio-card">
-          <a href="https://www.dorianlpg.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-            <img src="https://s204.q4cdn.com/731127281/files/design/dorian-logo.png" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
-          </a>
-          <div class="portfolio-content">
-            <a href="https://www.dorianlpg.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">LPG</span> — Dorian LPG <span class="portfolio-pct">8.36%</span></a>
-            <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
-            <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://x.com/PeterZeihan" target="_blank" rel="noopener noreferrer">Peter Zeihan</a></p>
-          </div>
-        </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Industrials">
           <a href="https://www.nat.bm" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/nat-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.nat.bm" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">NAT</span> — Nordic American Tankers <span class="portfolio-pct">7.28%</span></a>
+            <a href="https://www.nat.bm" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">NAT</span> — Nordic American Tankers <span class="portfolio-pct">8.91%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
             <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://x.com/PeterZeihan" target="_blank" rel="noopener noreferrer">Peter Zeihan</a></p>
           </div>
         </div>
-        <div class="portfolio-card">
-          <a href="https://www.generac.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-            <img src="media/generac-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
+        <div class="portfolio-card" data-sector="Industrials">
+          <a href="https://www.dorianlpg.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <img src="https://s204.q4cdn.com/731127281/files/design/dorian-logo.png" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.generac.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">GNRC</span> — Generac Holdings <span class="portfolio-pct">5.98%</span></a>
+            <a href="https://www.dorianlpg.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">LPG</span> — Dorian LPG <span class="portfolio-pct">8.39%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
-            <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://www.exergyenergy.com" target="_blank" rel="noopener noreferrer">David March</a> (exergyenergy.com)</p>
+            <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://x.com/PeterZeihan" target="_blank" rel="noopener noreferrer">Peter Zeihan</a></p>
           </div>
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Communication Services">
+          <a href="https://abc.xyz" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <img src="media/alphabet-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
+          </a>
+          <div class="portfolio-content">
+            <a href="https://abc.xyz" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">GOOGL</span> — Alphabet (Class A) <span class="portfolio-pct">7.25%</span></a>
+            <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
+          </div>
+        </div>
+        <div class="portfolio-card" data-sector="Consumer Discretionary">
           <a href="https://www.tjx.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/tjx-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.tjx.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">TJX</span> — TJX Companies <span class="portfolio-pct">5.83%</span></a>
+            <a href="https://www.tjx.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">TJX</span> — TJX Companies <span class="portfolio-pct">6.13%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
           </div>
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Industrials">
+          <a href="https://www.generac.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <img src="media/generac-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
+          </a>
+          <div class="portfolio-content">
+            <a href="https://www.generac.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">GNRC</span> — Generac Holdings <span class="portfolio-pct">5.24%</span></a>
+            <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
+            <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://www.exergyenergy.com" target="_blank" rel="noopener noreferrer">David March</a> (exergyenergy.com)</p>
+          </div>
+        </div>
+        <div class="portfolio-card" data-sector="Industrials">
           <a href="https://www.bldr.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/bldr-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.bldr.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">BLDR</span> — Builders FirstSource <span class="portfolio-pct">5.62%</span></a>
+            <a href="https://www.bldr.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">BLDR</span> — Builders FirstSource <span class="portfolio-pct">4.42%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> (2/1/26) The United States has a structural deficit of homes—especially manufactured and modular housing. As building materials and labor costs rise, disciplined operators should be able to compound value by scaling components, systems, and prefabricated execution to meet demand efficiently. Builders FirstSource fits this theme. It is currently my worst-performing position, and I'm okay with that: management has emphasized capital discipline and has repurchased roughly half the share count since 2021. To me, those repurchases are a tangible signal of long-term alignment and a "shrink-the-float" tailwind if the housing deficit persists.</p>
           </div>
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Financials">
           <a href="https://www.investidores.nu" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/nu-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.investidores.nu" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">NU</span> — Nu Holdings <span class="portfolio-pct">3.09%</span></a>
+            <a href="https://www.investidores.nu" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">NU</span> — Nu Holdings <span class="portfolio-pct">2.80%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
             <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://x.com/WhitneyTilson" target="_blank" rel="noopener noreferrer">Whitney Tilson</a></p>
           </div>
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Consumer Staples">
           <a href="https://www.costco.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/costco-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.costco.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">COST</span> — Costco <span class="portfolio-pct">2.58%</span></a>
+            <a href="https://www.costco.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">COST</span> — Costco <span class="portfolio-pct">2.68%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
           </div>
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Health Care">
           <a href="https://www.intuitive.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/isrg-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.intuitive.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">ISRG</span> — Intuitive Surgical <span class="portfolio-pct">2.56%</span></a>
+            <a href="https://www.intuitive.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">ISRG</span> — Intuitive Surgical <span class="portfolio-pct">2.47%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
             <p class="portfolio-idea"><strong>Idea from:</strong> Private recommendation from a friend's father.</p>
           </div>
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Utilities">
+          <a href="https://www.talenenergy.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <img src="media/talen-energy-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
+          </a>
+          <div class="portfolio-content">
+            <a href="https://www.talenenergy.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">TLN</span> Jan 2028 $350 Call (short) — Option on Talen Energy <span class="portfolio-pct">2.46%</span></a>
+            <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
+          </div>
+        </div>
+        <div class="portfolio-card" data-sector="Communication Services">
+          <a href="https://abc.xyz" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <img src="media/alphabet-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
+          </a>
+          <div class="portfolio-content">
+            <a href="https://abc.xyz" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">GOOG</span> — Alphabet (Class C) <span class="portfolio-pct">2.32%</span></a>
+            <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
+          </div>
+        </div>
+        <div class="portfolio-card" data-sector="Information Technology">
           <a href="https://www.ishares.com/us/products/239771/" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/igv-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.ishares.com/us/products/239771/" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">IGV</span> — iShares Expanded Tech-Software Sector ETF <span class="portfolio-pct">1.52%</span></a>
+            <a href="https://www.ishares.com/us/products/239771/" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">IGV</span> — iShares Expanded Tech-Software Sector ETF <span class="portfolio-pct">1.61%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
             <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://x.com/enriqueabeyta" target="_blank" rel="noopener noreferrer">Enrique Abeyta</a></p>
           </div>
         </div>
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-sector="Health Care">
           <a href="https://www.stryker.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
             <img src="media/stryker-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
           </a>
           <div class="portfolio-content">
-            <a href="https://www.stryker.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">SYK</span> — Stryker <span class="portfolio-pct">0.49%</span></a>
+            <a href="https://www.stryker.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">SYK</span> — Stryker <span class="portfolio-pct">0.44%</span></a>
+            <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
+          </div>
+        </div>
+        <div class="portfolio-card" data-sector="Information Technology">
+          <a href="https://www.asml.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <img src="media/asml-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
+          </a>
+          <div class="portfolio-content">
+            <a href="https://www.asml.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">ASML</span> — ASML Holding <span class="portfolio-pct">0.35%</span></a>
+            <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
+          </div>
+        </div>
+        <div class="portfolio-card" data-sector="Materials">
+          <a href="https://www.southerncoppercorp.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+            <img src="media/scco-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
+          </a>
+          <div class="portfolio-content">
+            <a href="https://www.southerncoppercorp.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">SCCO</span> — Southern Copper <span class="portfolio-pct">0.32%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
           </div>
         </div>
@@ -208,11 +258,83 @@
       </p>
     </section>
 
+    <section id="performance" aria-labelledby="performance-title">
+      <h2 id="performance-title">Quarterly performance</h2>
+      <p class="performance-note">
+        Retirement account returns versus the S&amp;P 500 total return for the calendar quarter (approximate figures).
+      </p>
+      <div class="performance-table-wrap" role="region" aria-label="Quarterly performance comparison table">
+        <table class="performance-table">
+          <caption class="visually-hidden">Retirement account performance by quarter versus S&amp;P 500 benchmark</caption>
+          <thead>
+            <tr>
+              <th scope="col">Quarter</th>
+              <th scope="col">Portfolio (%)</th>
+              <th scope="col">S&amp;P 500 (%)</th>
+              <th scope="col">Outperformance (pp)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Q1 2026</th>
+              <td class="performance-num">+2.0%</td>
+              <td class="performance-num">−4.6%</td>
+              <td class="performance-num performance-outperform">+6.6</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="quarterly-review" aria-labelledby="quarterly-review-title">
+      <h2 id="quarterly-review-title">Quarterly Review</h2>
+
+      <article class="investing-review-post">
+        <header class="investing-review-meta">
+          <time datetime="2026-04-01">Wednesday, April 1, 2026</time>
+        </header>
+
+        <p class="investing-review-lead">
+          <strong>Q1 2026 (January 1, 2026 through March 31, 2026):</strong> my retirement accounts gained approximately 2.0% for the quarter, versus a −4.6% return for the S&amp;P 500, for about 6.6 percentage points of outperformance.
+        </p>
+
+        <p>
+          At the end of Q1 2026, my retirement accounts were a useful reminder that portfolio results are usually driven by a handful of positions, not by everything moving in the same direction at once.
+        </p>
+
+        <p>
+          My best performers were <strong>Nordic American Tankers (NAT)</strong> and <strong>Dorian LPG (LPG)</strong>, with <strong>Generac (GNRC)</strong> also contributing meaningfully. These positions did a lot of the heavy lifting during the quarter and helped offset weakness elsewhere in the portfolio.
+        </p>
+
+        <p>
+          My largest drags were <strong>Eli Lilly (LLY)</strong> and <strong>Talen Energy (TLN)</strong>. That was not just because they declined, but because they were meaningful positions. Position size matters. A modest move in a large holding usually matters more than a large move in a small one.
+        </p>
+
+        <p>
+          One thing that stood out this quarter was the value of <strong>selling covered calls</strong>. In higher-multiple stocks especially, covered calls can be an effective way to <strong>cushion against drawdowns</strong>. They do not eliminate downside, and they cap some upside, but they can help reduce volatility and generate income while holding through periods of weakness.
+        </p>
+
+        <p>
+          More broadly, one of the more durable lessons I have taken from value investors is that building a sustainable portfolio is not really about chasing outperformance in every quarter. In my view, the higher achievement is often much simpler and much harder: <strong>when the benchmark is down, be down by less</strong>. Compounding is helped not only by upside, but by avoiding unnecessary damage on the downside. To borrow one of <a href="https://en.wikipedia.org/wiki/Charlie_Munger" target="_blank" rel="noopener noreferrer">Charlie Munger</a>&rsquo;s recurring ideas, if you can avoid the big mistakes, the favorable outcomes tend to take care of themselves. In that respect, I am pleased with my results this quarter.
+        </p>
+
+        <p>
+          A few new positions also appeared in the portfolio this quarter, including <strong>IGV</strong>, <strong>ASML</strong>, and <strong>SCCO</strong>. They are still relatively small, but they reflect a bit more diversification in the current mix.
+        </p>
+
+        <p>
+          The broader lesson for me is simple: performance is rarely about being &ldquo;right&rdquo; in the abstract. It is about where capital was actually allocated, how concentrated those bets were, and whether the winners were large enough to matter. Just as importantly, it is about having a few tools available to manage risk when the market turns against you.
+        </p>
+      </article>
+    </section>
+
     <footer>
       <p>© 2026 Jordan Baucke</p>
     </footer>
 
   </main>
   <script src="nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js" crossorigin="anonymous"></script>
+  <script src="investing-sector-chart.js"></script>
 </body>
 </html>
