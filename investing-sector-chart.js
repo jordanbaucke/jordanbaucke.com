@@ -3,10 +3,13 @@
  */
 (function () {
   function parsePct(card) {
-    var el = card.querySelector('.portfolio-pct');
-    if (!el) return 0;
-    var m = el.textContent.match(/[\d.]+/);
-    return m ? parseFloat(m[0]) : 0;
+    var els = card.querySelectorAll('.portfolio-pct');
+    var sum = 0;
+    els.forEach(function (el) {
+      var m = el.textContent.match(/[\d.]+/);
+      if (m) sum += parseFloat(m[0]);
+    });
+    return sum;
   }
 
   function aggregateBySector() {
