@@ -66,7 +66,7 @@
       <div class="portfolio-sector-chart-block">
         <h3 id="portfolio-sector-title">Allocation by sector</h3>
         <p class="portfolio-sector-note">
-          Broad GICS-style sector tags on each position below; the chart sums those weights (same date as the list).
+          Broad GICS-style sector tags on each position below; the chart sums all weights on each card (including short calls listed under the underlying).
         </p>
         <div class="portfolio-chart-canvas-wrap">
           <canvas id="portfolio-sector-chart" width="400" height="400" aria-labelledby="portfolio-sector-title" role="img"></canvas>
@@ -93,6 +93,9 @@
           </a>
           <div class="portfolio-content">
             <a href="https://www.talenenergy.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">TLN</span> — Talen Energy <span class="portfolio-pct">17.14%</span></a>
+            <ul class="portfolio-overlays" aria-label="Listed option overlays on this underlying">
+              <li><span class="portfolio-overlay-label">Short call:</span> Jan 2028 $350 Call <span class="portfolio-pct">2.46%</span></li>
+            </ul>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
             <p class="portfolio-idea"><strong>Idea from:</strong> <a href="https://x.com/enriqueabeyta" target="_blank" rel="noopener noreferrer">Enrique Abeyta</a>, <a href="https://x.com/WhitneyTilson" target="_blank" rel="noopener noreferrer">Whitney Tilson</a>, <a href="https://x.com/ErikSTownsend" target="_blank" rel="noopener noreferrer">Erik Townsend</a></p>
           </div>
@@ -190,15 +193,6 @@
             <a href="https://www.intuitive.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">ISRG</span> — Intuitive Surgical <span class="portfolio-pct">2.47%</span></a>
             <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
             <p class="portfolio-idea"><strong>Idea from:</strong> Private recommendation from a friend's father.</p>
-          </div>
-        </div>
-        <div class="portfolio-card" data-sector="Utilities">
-          <a href="https://www.talenenergy.com" target="_blank" rel="noopener noreferrer" class="portfolio-link">
-            <img src="media/talen-energy-logo.svg" alt="" class="portfolio-logo" loading="lazy" width="48" height="48" />
-          </a>
-          <div class="portfolio-content">
-            <a href="https://www.talenenergy.com" target="_blank" rel="noopener noreferrer" class="portfolio-link"><span class="portfolio-symbol">TLN</span> Jan 2028 $350 Call (short) — Option on Talen Energy <span class="portfolio-pct">2.46%</span></a>
-            <p class="portfolio-thesis"><strong>Thesis:</strong> Coming soon…</p>
           </div>
         </div>
         <div class="portfolio-card" data-sector="Communication Services">

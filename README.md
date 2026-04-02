@@ -28,3 +28,12 @@ For profile images in the homepage Philosophy quote carousel, use this order:
 When using non-Wikimedia images, download and store the files in `media/` and reference them from `quotes-carousel.js` so quote avatars are stable and not dependent on third-party hotlinking.
 
 The Lucky Boys Confusion quote avatar (`media/lucky-boys-confusion.jpg`) is sourced from [Concert Live Wire](http://www.concertlivewire.com/jpegs/shows/lbc7.jpg).
+
+## Investing page — options with the underlying
+
+When a position includes **short calls** (or other listed option overlays) on a stock already shown as a `portfolio-card`, keep **one panel per underlying**:
+
+- Primary line: the common stock / ETF with its weight in `<span class="portfolio-pct">…</span>`.
+- Under it, a `<ul class="portfolio-overlays">` with one `<li>` per overlay; each overlay line includes its own `<span class="portfolio-pct">…</span>`.
+
+The sector chart script sums **all** `.portfolio-pct` values inside each card, so weights stay consistent without a duplicate card.
