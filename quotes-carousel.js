@@ -72,6 +72,10 @@
         label: "Rancid",
         imageUrl: "media/rancid-photo.jpg"
       },
+      "17": {
+        label: "Lars Frederiksen",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/20170617-267-Nova_Rock_2017-Rancid-Lars_Frederiksen.jpg/330px-20170617-267-Nova_Rock_2017-Rancid-Lars_Frederiksen.jpg"
+      },
       "16": {
         label: "Sublime",
         imageUrl: "media/sublime-band.jpg"
