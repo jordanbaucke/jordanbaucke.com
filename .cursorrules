@@ -18,3 +18,6 @@ When adding external links to HTML files:
 ## Investing page (portfolio + short options)
 - Put **short calls** (and similar listed option overlays) on the **same `portfolio-card`** as the underlying security, not in a separate card.
 - Use `<ul class="portfolio-overlays">` with a `<li>` per overlay; each line must include `<span class="portfolio-pct">…</span>` so `investing-sector-chart.js` aggregates the full weight for that sector.
+
+## Library (`library.html`)
+- When adding or editing a book entry, ask: **"When did you finish reading this book?"** If the user provides a month and year, append it to the `<li>` after the author(s), using ` – finished [Month] [Year]` (e.g. ` – finished Apr 2026`). If they skip it or the book is not yet finished, omit that suffix.
