@@ -111,6 +111,10 @@
       "25": {
         label: "Lucky Boys Confusion",
         imageUrl: "media/lucky-boys-confusion.jpg"
+      },
+      "26": {
+        label: "Mike Tyson",
+        imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Mike_Tyson_2019_by_Glenn_Francis.jpg/330px-Mike_Tyson_2019_by_Glenn_Francis.jpg"
       }
     };
 
