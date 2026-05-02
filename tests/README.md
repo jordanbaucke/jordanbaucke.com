@@ -110,8 +110,9 @@ jobs:
       
       - name: Install lychee
         run: |
-          curl -L https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-gnu.tar.gz | tar -xz
-          sudo mv lychee /usr/local/bin/
+          curl -fsSL https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-gnu.tar.gz | tar -xz
+          sudo mv lychee-x86_64-unknown-linux-gnu/lychee /usr/local/bin/
+          rm -rf lychee-x86_64-unknown-linux-gnu
       
       - name: Extract links
         run: python3 tests/extract_links.py
