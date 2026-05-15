@@ -18,3 +18,4 @@ yarn.lock
 tests/link_check_results.txt
 tests/lychee_input.txt
 tests/outbound_links.txt
+.agentifier/trace-data/
