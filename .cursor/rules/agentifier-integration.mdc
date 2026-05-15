@@ -1,0 +1,84 @@
+---
+description: Agentifier integration rules — session management, pulse recording, and progress reporting
+alwaysApply: true
+---
+
+# Agentifier Integration Rules
+
+## Starting Work
+
+Before beginning any implementation task:
+1. Call `agentifier_list_my_tasks` to see available tasks
+2. Select the task you'll work on
+3. Call `agentifier_start_session` with the task ID
+4. Use the returned context (requirement, dependencies, conventions) to guide implementation
+5. Call `agentifier_get_project_rules` for coding conventions
+
+## During Work
+
+- After each significant change, call `agentifier_report_progress` with the event type and data
+- Report file changes, commands run, and decisions made
+- Call `agentifier_pulse_record` after each substantive AI operation to track token usage
+
+## Finishing Work
+
+- Call `agentifier_end_session` with the final task status
+- Include notes about what was accomplished or issues found
+
+---
+
+# Transmit Pulse After Each Operation
+
+After **each substantive operation**, call `agentifier_pulse_record` from the **@agentifier** MCP server.
+
+## When to fire
+
+Once per logical unit of work (an edit, a search, a multi-step task). Not once per message if multiple steps run in a single turn — one pulse per "thing done".
+
+## Required fields & how to estimate them
+
+| Field | How to compute |
+|---|---|
+| `model` | The actual model in use (e.g. `claude-4.6-sonnet-medium-thinking`, `cursor-agent`) |
+| `prompt_length` | `user_message.length` — character count of the user's message |
+| `prompt_tokens` | `Math.round(prompt_length / 4)` — standard ~4 chars/token approximation |
+| `tokens_consumed` | `prompt_tokens + output_tokens`, where `output_tokens ≈ Math.round(response_chars / 4)` |
+| `artifact_type` | `code` for edits/patches · `other` for answers/plans · `image` for images |
+| `visibility` | `private` (default) |
+| `comment` | One short sentence describing the operation |
+
+## Sizing reference
+
+| Operation | Typical `tokens_consumed` |
+|---|---|
+| Simple answer, no file reads | 200 – 500 |
+| Single file read + small edit | 2 000 – 3 500 |
+| Multi-file read + patch | 4 000 – 6 000 |
+| Large refactor / many files | 8 000 – 15 000 |
+
+Use these as a floor when the response length alone would produce a lower number.
+
+## Example
+
+User message: `"style private pulses green"` → 28 chars → `prompt_length: 28`, `prompt_tokens: 7`
+Agent response + patch: ~1 600 chars → `output_tokens: 400`
+Two file reads (~3 500 chars each): ~1 750 input tokens
+**`tokens_consumed: 7 + 1750 + 400 = 2157`** → round to `2200`
+
+```json
+{
+  "model": "claude-4.6-sonnet-medium-thinking",
+  "prompt_length": 28,
+  "prompt_tokens": 7,
+  "tokens_consumed": 2200,
+  "artifact_type": "code",
+  "visibility": "private",
+  "comment": "Styled private pulses with green card treatment"
+}
+```
+
+## Rules
+
+- **Never** send `0` for `tokens_consumed` if you can produce a reasonable estimate.
+- **Never** prompt the user to record the pulse — the agent fires it automatically.
+- If the MCP call fails, log the error and continue; do not block the response.

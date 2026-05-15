@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "bash .agentifier/hooks/before-submit-prompt.sh"
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "bash .agentifier/hooks/after-file-edit.sh"
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "bash .agentifier/hooks/before-shell-execution.sh"
+      }
+    ],
+    "afterShellExecution": [
+      {
+        "command": "bash .agentifier/hooks/after-shell-execution.sh"
+      }
+    ],
+    "stop": [
+      {
+        "command": "bash .agentifier/hooks/stop.sh"
+      }
+    ]
+  }
+}
